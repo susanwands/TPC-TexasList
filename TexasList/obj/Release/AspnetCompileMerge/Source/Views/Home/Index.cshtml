@@ -1,0 +1,36 @@
+﻿@model TexasList.Models.ViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            </div>
+        </div>
+            <div class="row clearfix">
+                <div class="col-md-6 column">
+
+                    <img src="~/Content/texas2.jpg" height="500" width="550" />
+                </div>
+                <div class="col-md-6 column">
+                    <div><br/><br/><br/><br/></div>
+                    <div class="page-header">
+                        <h1>
+                            Texas List<small>...find it in Texas</small>
+                        </h1>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-default">Pick a City</button> <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            @foreach (var city in Model.Cities) { 
+                            <li>
+                                <a href="@Url.Action("CityPage", "Home", new{Id= @city.CityId})">@city.CityName</a>
+                            </li>
+                            }
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,29 @@
+﻿@model TexasList.Models.ViewModel
+@{
+    ViewBag.Title = "Post";
+}
+@foreach (var post in Model.Posts) { 
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <h3>
+                @post.Title
+            </h3>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <p>
+               @post.AdBody
+            </p>
+            <p>
+               $@post.Amount
+            </p>
+            <p>
+                For more information:
+                @post.User.Email
+            </p>
+        </div>
+    </div>
+</div>
+}

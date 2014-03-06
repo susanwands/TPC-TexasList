@@ -1,0 +1,10 @@
+﻿body {
+background-color: #FFF;
+/*background-image: url('texas2.jpg');
+background-repeat: no-repeat;
+background-size: 50%;*/
+}
+
+#makeAPost{
+    display:none;
+}

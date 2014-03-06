@@ -1,0 +1,205 @@
+﻿@model TexasList.Models.ViewModel
+
+@foreach (var c in Model.Cities){
+    <h2>@c.CityName</h2>
+
+    
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-4 column">
+            <h4>Events</h4>
+            <ul>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 1, subCat = 1 })">Concerts</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 1, subCat = 2 })">Sports</a>
+                   
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 1, subCat = 3 })">Family Friendly</a>
+                  
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 1, subCat = 4 })"> Charities and Causes</a>
+                   
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 1, subCat = 5 })">Misc. Events</a>
+                    
+                </li>
+                </ul>
+</div>
+        <div class="col-md-4 column">
+            <h4>Real Estate</h4>
+            <ul>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 2, subCat = 6 })">Residential - For Rent</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 2, subCat = 7 })"> Residential - For Sale</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 2, subCat = 8 })"> Commercial - For Rent</a>
+            
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 2, subCat = 9 })"> Commercial - For Sale</a>
+          
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 2, subCat = 10 })"> Misc. Real Estate</a>
+           
+                </li>
+                
+            </ul>
+        </div>
+        <div class="col-md-4 column">
+            <h4>Personals</h4>
+            <ul>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 3, subCat = 11 })">Boy meets Girl</a>
+             
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 3, subCat = 12 })">Boy meets Boy</a>
+                    
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 3, subCat = 13 })">Girl meets Girl</a>
+                    
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 3, subCat = 14 })">Farmers Only</a>
+                    
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 3, subCat = 15 })">Other</a>
+                    
+                </li>
+              
+            </ul>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-4 column">
+            <h4>Jobs</h4>
+            <ul>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 4, subCat = 16 })">Accounting / Finance</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 4, subCat = 17 })">Computers / Tech / Engineering</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 4, subCat = 18 })">Education / Child Care</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 4, subCat = 19 })">Legal</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 4, subCat = 20 })"> Manufacturing / Labor</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 4, subCat = 21 })">Office Staff</a>
+                </li>
+               <li>
+                   <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 4, subCat = 22 })">Restaurant / Bar Staff</a>
+               </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 4, subCat = 23 })">Sales / Retail</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 4, subCat = 24 })"> Misc.</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-4 column">
+            <h4>Stuff for Sale</h4>
+            <ul>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 5, subCat = 25 })"> Animals</a>
+                    
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 5, subCat = 26 })"> Antiques</a>
+                    
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 5, subCat = 27 })">  Books</a>
+                   
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 5, subCat = 28 })"> Children's Stuff</a>
+                    
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 5, subCat = 29 })"> Electronics</a>
+                    
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 5, subCat = 30 })">For Free</a>
+                    
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 5, subCat = 31 })"> Furniture</a>
+                    
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 5, subCat = 32 })"> General Household</a>
+                    
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 5, subCat = 33 })">  Jewelry</a>
+                  
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 5, subCat = 34 })"> Vehicles</a>
+                    
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 5, subCat = 35 })"> Misc. for Sale</a>
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-4 column">
+            <h4>Local Services</h4>
+            <ul>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 6, subCat = 36 })"> Child Care</a>
+                    
+                </li>
+               
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 6, subCat = 37 })"> Delivery and Moving</a>
+                    
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 6, subCat = 38 })"> Electrical / Plumbing / HVAC</a>
+                    
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 6, subCat = 39 })"> Home Repair and Improvement</a>
+                    
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 6, subCat = 40 })">Landscaping</a>
+                    
+                </li>
+                          
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 6, subCat = 41 })">  Mechanics</a>
+                   
+                </li>
+                <li>
+                    <a href="@Url.Action("Listing", "Home", new { cityId = @c.CityId, category = 6, subCat = 42 })"> Misc. Services</a>
+                    
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+}

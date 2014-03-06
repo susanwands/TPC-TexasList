@@ -1,0 +1,133 @@
+﻿@model TexasList.Models.ViewModel
+@{
+    ViewBag.Title = "Manage";
+}
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <h3>
+                <br/>
+                Make and Manage Posts<br/><br/>
+            </h3>
+            @foreach (var u in Model.Users)
+            { 
+            <h4>Welcome... @u.UserName </h4>
+            }
+        </div>
+    </div>
+    <div id="makeAPost" class="row clearfix">
+        <div class="col-md-12 column">
+            <h4><br/>Create new Post:</h4>
+
+            <form  method="post" class="form-horizontal" role="form">
+                <div style="display:none;">
+                @foreach (var u in Model.Users)
+                {
+                    <input type="number" name="userId" value="@u.UserId"/>
+                }
+                </div>
+               
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <input type="Text" class="form-control" name="Title" placeholder="title" />
+                    </div>
+                    </div>
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <textarea class="form-control" name="adBody" placeholder="Description"></textarea>
+                    </div>
+                    </div>
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="amount" placeholder="Amount" />
+                    </div>
+                    </div>
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <select class="form-control" name="subcatagoryId">
+                            <option value="" selected disabled>Select Category</option>
+                            @foreach (var cat in Model.Categories)
+                            {
+                               <optgroup label="@cat.CategoryName"></optgroup>
+                                foreach (var s in @cat.Subcategories)
+                                {
+                                    <option value="@s.SubcategoryId">@s.SubcategoryName</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                    </div>
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <select class="form-control" name="cityId">
+                            <option value="" selected disabled>Select City</option>
+                            @foreach (var city in Model.Cities)
+                            {
+                                <option value="@city.CityId">@city.CityName</option>
+                            }
+                            
+                        </select>
+                    </div>
+                </div>
+               
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-default">Submit Post</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <button id="newPost" type="button" class="btn btn-default">Create New Post</button><br/><br/>
+            <h4>Your Current Posts:</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Title
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                        <th>
+                            Amount
+                        </th>
+                        <th>
+                            UserID
+                        </th>
+                        <th>
+                            Delete
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var p in Model.Posts) { 
+                    <tr>
+                        <td>
+                            @p.Title
+                        </td>
+                        <td>
+                            @p.AdBody
+
+                        </td>
+                        <td>
+                            @p.Amount
+                        </td>
+                        <td>
+                            @p.UserId
+                        </td>
+                        <td>
+                            <form action="Delete" method="get">
+                            <button name="deleteId" value="@p.PostId" type="submit">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

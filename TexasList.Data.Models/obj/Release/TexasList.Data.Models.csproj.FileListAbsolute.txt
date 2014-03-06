@@ -1,0 +1,5 @@
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data.Models\bin\Release\TexasList.Data.Models.dll
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data.Models\bin\Release\TexasList.Data.Models.pdb
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data.Models\obj\Release\TexasList.Data.Models.csprojResolveAssemblyReference.cache
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data.Models\obj\Release\TexasList.Data.Models.dll
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data.Models\obj\Release\TexasList.Data.Models.pdb

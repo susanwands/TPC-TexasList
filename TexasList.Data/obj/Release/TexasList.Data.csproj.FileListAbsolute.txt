@@ -1,0 +1,14 @@
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data\bin\Release\TexasList.Data.dll.config
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data\bin\Release\TexasList.Data.dll
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data\bin\Release\TexasList.Data.pdb
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data\bin\Release\EntityFramework.dll
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data\bin\Release\TexasList.Data.Models.dll
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data\bin\Release\TexasList.Data.Models.pdb
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data\bin\Release\EntityFramework.xml
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data\obj\Release\TexasList.Data.csprojResolveAssemblyReference.cache
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data\obj\Release\TexasList.Data.Migrations.First.resources
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data\obj\Release\TexasList.Data.csproj.GenerateResource.Cache
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data\obj\Release\TexasList.Data.dll
+C:\Users\Susan\documents\visual studio 2013\Projects\TexasList\TexasList.Data\obj\Release\TexasList.Data.pdb
